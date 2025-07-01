@@ -1,0 +1,1091 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cyberpulse</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="Cyberpulse, la consultoría informática líder de Kosem Shelby, impulsa la innovación tecnológica y la transformación digital." />
+        <meta name="keywords" content="consultoría informática, tecnología avanzada, ciberseguridad, transformación digital, desarrollo de software, IA, Kosem Shelby" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Britannic+Bold&display=swap" rel="stylesheet">
+    <style>
+        /* Minecraft-inspired font */
+        @font-face {
+            font-family: 'ciberpulse';
+            src: url('assets/fonts/cyberpulse') format('truetype');
+        }
+
+        /* General body styling with local background image */
+        body {
+            background: url('0.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #F5F5F5; /* Blanco medio elegante */
+            font-family: 'Minecraft', 'Arial', sans-serif;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px #000000;
+            font-weight: 500;
+            font-style: italic; /* Texto en cursiva para contenido general */
+            /* Alternativa si la imagen no carga: background: rgba(255, 255, 255, 0.5); */
+        }
+
+        #wrapper {
+            background: transparent; /* Fondo transparente para mostrar la imagen del body */
+            box-shadow: 0 0 20px #FFD700; /* Amarillo brillante */
+            border-radius: 8px;
+            padding: 2em;
+            border: 4px solid #FFD700; /* Borde amarillo */
+            border-style: inset;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        section {
+            border-bottom: 2px linear-gradient(to right, #FFFFFF, #FF0000);
+        }
+
+        /* Custom headers with Britannic Bold */
+        .custom-header {
+            background-color: #000000; /* Fondo negro */
+            color: #FFFF00; /* Amarillo neón luminoso */
+            padding: 0.5em 1em;
+            border: 4px solid #FF0000; /* Borde rojo neón brillante */
+            border-style: outset;
+            display: inline-block;
+            text-shadow: 0 0 3px rgba(255, 0, 0, 0.7); /* Brillo rojo en el texto */
+            border-radius: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-family: 'Britannic Bold', sans-serif; /* Fuente Britannic Bold */
+            box-shadow: 0 0 15px #FF0000, 0 0 30px #FF0000; /* Brillo rojo intenso */
+        }
+        .custom-header:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #FF0000, 0 0 40px #FF0000; /* Brillo más intenso en hover */
+        }
+        .custom-header-h1 {
+            font-size: 3em; /* Tamaño reducido para un título mediano */
+            font-family: 'Great Vibes', cursive; /* Fuente manuscrita */
+            background-color: #000000; /* Fondo negro */
+            color: #FFFF00; /* Amarillo neón luminoso */
+            padding: 0.4em 0.8em; /* Padding reducido para un recuadro más pequeño */
+            text-shadow: 0 0 5px #000000;
+            margin-bottom: 0.5em;
+            line-height: 1.2;
+            text-align: center; /* Centra el texto del título */
+            border: 4px solid #FF0000; /* Borde rojo neón brillante */
+            border-style: outset;
+            box-shadow: 0 0 15px #FF0000, 0 0 30px #FF0000; /* Brillo rojo intenso */
+        }
+        .custom-header-h1:hover {
+            box-shadow: 0 0 20px #FF0000, 0 0 40px #FF0000; /* Brillo más intenso en hover */
+        }
+        .custom-header-h2 {
+            font-size: 1.6em;
+            background-color: #000000; /* Fondo negro */
+            color: #FFFF00; /* Amarillo neón luminoso */
+            border: 4px solid #FF0000; /* Borde rojo neón brillante */
+            border-style: outset;
+            box-shadow: 0 0 15px #FF0000, 0 0 30px #FF0000; /* Brillo rojo intenso */
+        }
+        .custom-header-h2:hover {
+            box-shadow: 0 0 20px #FF0000, 0 0 40px #FF0000; /* Brillo más intenso en hover */
+        }
+        .custom-header-h3 {
+            font-size: 1.2em;
+            background-color: #000000; /* Fondo negro */
+            color: #FFFF00; /* Amarillo neón luminoso */
+            border: 4px solid #FF0000; /* Borde rojo neón brillante */
+            border-style: outset;
+            box-shadow: 0 0 15px #FF0000, 0 0 30px #FF0000; /* Brillo rojo intenso */
+        }
+        .custom-header-h3:hover {
+            box-shadow: 0 0 20px #FF0000, 0 0 40px #FF0000; /* Brillo más intenso en hover */
+        }
+        /* Buttons with cyberpulse block style */
+        .button.primary {
+            background-color: rgba(60, 47, 47, 0.7); /* Semi-transparente para ver el fondo */
+            color: #FFFFFF !important; /* Blanco */
+            border: 3px solid #FFFFFF; /* Borde blanco */
+            border-style: outset;
+            text-shadow: 0 0 5px #FFFFFF; /* Brillo blanco */
+            font-family: 'Minecraft', 'Arial', sans-serif;
+            font-size: 0.9em;
+            padding: 0.5em 1em;
+            transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .button.primary:hover {
+            background-color: rgba(74, 55, 47, 0.7); /* Ligeramente más claro en hover */
+            border-color: #D3D3D3; /* Gris claro para hover */
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #FFFFFF; /* Brillo blanco */
+        }
+        .button.primary.small {
+            background-color: rgba(60, 47, 47, 0.7); /* Semi-transparente para ver el fondo */
+            color: #FFFFFF !important; /* Blanco */
+            border: 3px solid #FFFFFF; /* Borde blanco */
+            font-size: 0.8em;
+            padding: 0.4em 0.8em;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .button.primary.small:hover {
+            background-color: rgba(255, 193, 7, 0.7); /* Amarillo semi-transparente en hover */
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #FFC107; /* Brillo amarillo */
+        }
+        .button.large {
+            font-size: 0.9em;
+            padding: 0.5em 1em;
+            background-color: rgba(255, 255, 255, 0.7); /* Blanco semi-transparente */
+            color: #3C2F2F !important; /* Marrón oscuro para contraste */
+            border: 3px solid #FFFFFF; /* Borde blanco */
+            text-shadow: 0 0 5px #FFFFFF; /* Brillo blanco */
+            box-shadow: 0 0 15px #FFFFFF; /* Brillo luminoso */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .button.large:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #FFFFFF; /* Brillo más intenso */
+        }
+
+        a {
+            color: #00FF00;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        a:hover {
+            color: #33FF33;
+            text-shadow: 0 0 5px #00FF00;
+        }
+
+        /* Feature icons with animations */
+        .feature-icons li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5em;
+            transition: transform 0.3s ease;
+        }
+        .feature-icons li:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icons .icon {
+            width: 70px; /* Tamaño mediano para íconos */
+            height: 70px;
+            margin-right: 1.5em;
+            border: 2px solid #FF4040; /* Borde rojizo brillante */
+            background-color: rgba(60, 47, 47, 0.5); /* Fondo semi-transparente */
+            box-shadow: 0 0 15px #FF4040, 0 0 25px #FF4040; /* Brillo rojizo más intenso */
+            padding: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            object-fit: contain; /* Asegura que las imágenes se vean claras */
+        }
+        .feature-icons .icon:hover {
+            animation: imageDynamic 0.7s ease forwards;
+            box-shadow: 0 0 20px #FF4040, 0 0 35px #FF4040; /* Brillo rojizo más intenso en hover */
+        }
+        .feature-icons .content h4 {
+            margin: 0 0 0.5em 0;
+            font-size: 1.2em;
+            color: #FFFFFF;
+            text-shadow: 0 0 3px rgba(255, 215, 0, 0.5);
+            transition: color 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .feature-icons .content h4:hover {
+            color: #00FF00;
+        }
+        .feature-icons .content p {
+            margin: 0 0 1em 0;
+            font-size: 0.9em;
+            color: #FFFFFF;
+            text-shadow: 0 0 3px rgba(255, 215, 0, 0.5);
+            transition: color 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .feature-icons .content p:hover {
+            color: #33FF33;
+        }
+
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            overflow-y: auto;
+            animation: modalFadeIn 0.5s ease;
+        }
+        @keyframes modalFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .modal-content {
+            background-color: rgba(60, 47, 47, 0.8); /* Semi-transparente para ver el fondo */
+            margin: 5% auto;
+            padding: 2em;
+            width: 80%;
+            max-width: 800px;
+            border: 4px solid #FF4040;
+            border-style: outset;
+            box-shadow: 0 0 10px #FFD700; /* Amarillo brillante */
+            animation: modalContentPop 0.5s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        @keyframes modalContentPop {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .modal-close {
+            float: right;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #00FF00;
+            transition: color 0.3s ease, transform 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .modal-close:hover {
+            color: #33FF33;
+            transform: rotate(90deg);
+        }
+        .image-clickable {
+            cursor: pointer;
+            border: 3px solid #FFD700;
+            background-color: rgba(60, 47, 47, 0.5); /* Fondo semi-transparente */
+            border-style: outset;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 15px #FFD700, 0 0 25px #FFD700; /* Brillo dorado más intenso */
+        }
+        .image-clickable:hover {
+            animation: imageDynamic 0.7s ease forwards;
+            box-shadow: 0 0 20px #FFD700, 0 0 35px #FFD700; /* Brillo dorado más intenso en hover */
+        }
+
+        /* Nueva animación para imágenes */
+        @keyframes imageDynamic {
+            0% { transform: scale(1) translateY(0) rotate(0); }
+            50% { transform: scale(1.1) translateY(-8px) rotate(3deg); }
+            100% { transform: scale(1.1) translateY(-8px) rotate(-3deg); }
+        }
+
+        /* Social media icons */
+        .icons a {
+            font-size: 1.2em;
+            margin: 0 8px;
+            transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .icons a.fa-facebook-f {
+            color: #1877F2; /* Azul de Facebook */
+            text-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
+        }
+        .icons a.fa-facebook-f:hover {
+            color: #3B5998; /* Azul más oscuro */
+            text-shadow: 0 0 10px #1877F2;
+            transform: translateY(-5px) rotate(10deg);
+        }
+        .icons a.fa-instagram {
+            color: #E1306C; /* Rosa de Instagram */
+            text-shadow: 0 0 5px rgba(225, 48, 108, 0.5);
+        }
+        .icons a.fa-instagram:hover {
+            background: linear-gradient(45deg, #E1306C, #833AB4); /* Gradiente Instagram */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px #E1306C;
+            transform: translateY(-5px) rotate(10deg);
+        }
+
+        /* Navigation arrow animation */
+        .arrow.scrolly {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .arrow.scrolly:hover {
+            transform: translateY(5px);
+            animation: bounceArrow 0.5s infinite;
+        }
+        @keyframes bounceArrow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(5px); }
+        }
+
+        /* Text animations */
+        p, h1, h2, h3, h4 {
+            animation: textPulse 1s ease-in-out; /* Duración reducida */
+            font-style: italic; /* Texto en cursiva */
+        }
+        @keyframes textPulse {
+            0% { opacity: 0; transform: translateX(-15px) scale(0.9); } /* Más pronunciado */
+            50% { opacity: 1; transform: translateX(0) scale(1.1); } /* Más pronunciado */
+            100% { opacity: 1; transform: translateX(0) scale(1); }
+        }
+
+        /* Estilo específico para los párrafos destacados */
+        .highlight-text {
+            color: #FFFFFF !important; /* Blanco brillante */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Brillo blanco iluminoso */
+            border: 2px solid #FFFFFF; /* Contorno blanco brillante */
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.6); /* Brillo iluminoso */
+            padding: 0.5em; /* Espacio interno para que el contorno no corte el texto */
+            font-style: italic; /* Mantener cursiva */
+        }
+        .highlight-text:active {
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 25px rgba(255, 255, 255, 0.8); /* Brillo blanco más intenso */
+        }
+
+        /* Estilo para párrafos debajo de subtítulos */
+        .subheader-text {
+            color: #000000 !important; /* Negro */
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra blanca para legibilidad */
+            font-style: italic; /* Mantener cursiva */
+        }
+        .subheader-text:active {
+            text-shadow: 0 0 15px rgba(255, 255, 0, 0.9), 0 0 25px rgba(255, 255, 0, 0.8); /* Brillo amarillo más intenso */
+        }
+
+        /* Efecto al presionar párrafos */
+        p {
+            position: relative;
+            cursor: pointer;
+            transition: text-shadow 0.3s ease;
+        }
+
+        /* Form styling */
+        .fields {
+            border: 2px solid #FF4040; /* Borde rojizo para el formulario */
+            padding: 1em;
+            border-radius: 4px;
+        }
+        .fields p {
+            font-size: 0.9em;
+            margin-bottom: 1.5em;
+            color: #F5F5F5;
+            text-shadow: 0 0 3px rgba(255, 215, 0, 0.5);
+            font-style: italic; /* Texto en cursiva */
+        }
+        .field label {
+            display: block;
+            font-size: 0.9em;
+            margin-bottom: 0.5em;
+            color: #F5F5F5;
+            text-shadow: 0 0 3px rgba(255, 215, 0, 0.5);
+            transition: color 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .field label:hover {
+            color: #00FF00;
+        }
+        .field input, .field textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #00FF00;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-family: 'ciberpulse', 'Arial', sans-serif;
+            color: #000000; /* Texto negro */
+            font-weight: bold; /* Negrita */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-style: italic; /* Texto en cursiva */
+        }
+        .field input::placeholder, .field textarea::placeholder {
+            color: #333333; /* Gris oscuro para placeholder */
+            font-weight: normal; /* Sin negrita en placeholder */
+            font-style: italic; /* Texto en cursiva */
+        }
+        .field input:hover, .field textarea:hover {
+            border-color: #33FF33;
+            box-shadow: 0 0 5px #00FF00;
+        }
+        .actions {
+            margin-top: 1em;
+        }
+
+        /* Contact items */
+        .items li {
+            margin-bottom: 2.5em;
+            margin-left: -10px;
+        }
+        .items li h3 {
+            margin-bottom: 0.5em;
+            color: #F5F5F5;
+            text-shadow: 0 0 3px rgba(255, 215, 0, 0.5);
+            font-style: italic; /* Texto en cursiva */
+        }
+        .items li a, .items li span {
+            color: #F5F5F5;
+            text-shadow: 0 0 3px rgba(255, 215, 0, 0.5);
+            font-style: italic; /* Texto en cursiva */
+        }
+
+        /* Uniform content box sizes */
+        section .content {
+            min-height: 400px;
+            box-sizing: border-box;
+            padding: 1em;
+        }
+        .content p {
+            color: #FFFFFF;
+            text-shadow: 0 0 3px rgba(255, 215, 0, 0.5);
+            font-style: italic; /* Texto en cursiva */
+        }
+
+        /* Estilos específicos para el modal "Descubra Más" */
+        #consultancy-modal .modal-content p,
+        #consultancy-modal .modal-content li {
+            color: #FFFFFF !important;
+            text-shadow: 0 0 3px rgba(255, 215, 0, 0.5);
+            font-style: italic; /* Texto en cursiva */
+        }
+
+        /* Nueva animación de desplazamiento para imágenes de la galería */
+        .gallery {
+            background-color: rgba(60, 47, 47, 0.5); /* Fondo semi-transparente */
+            border: 2px solid #FFD700; /* Borde dorado */
+            box-shadow: 0 0 10px #FFD700; /* Brillo dorado */
+            padding: 1em;
+            border-radius: 4px;
+        }
+        .gallery .image-clickable {
+            position: relative; /* Para posicionar el tooltip */
+            transition: all 0.3s ease;
+        }
+        .gallery .image-clickable:hover {
+            animation: slideBounce 0.6s ease-in-out; /* Nueva animación de desplazamiento */
+            box-shadow: 0 0 20px #FFD700, 0 0 35px #FFD700; /* Sombra más intensa en hover */
+        }
+        @keyframes slideBounce {
+            0% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-10px) scale(1.05); }
+            100% { transform: translateY(0) scale(1.02); }
+        }
+
+        /* Estilos para el tooltip en hover */
+        .gallery .image-clickable .tooltip {
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(60, 47, 47, 0.9); /* Fondo marrón oscuro semi-transparente */
+            color: #FFFFFF;
+            padding: 10px;
+            border: 2px solid #FFD700; /* Borde dorado */
+            border-radius: 5px;
+            font-size: 0.8em;
+            font-family: 'Minecraft', sans-serif;
+            text-shadow: 1px 1px 2px #000000;
+            width: 200px;
+            text-align: center;
+            z-index: 10;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            font-style: italic;
+        }
+        .gallery .image-clickable:hover .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Nuevo estilo para imágenes de fulls/ en el modal */
+        .modal-content img.fulls-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* Mantiene proporción recortando si es necesario */
+            border: 3px solid #FFD700; /* Consistente con .image-clickable */
+            box-shadow: 0 0 10px #FFD700; /* Consistente con .image-clickable */
+            border-radius: 4px; /* Estética consistente */
+            display: block;
+            margin: 0 auto; /* Centra la imagen */
+        }
+
+        /* Estilo para el mensaje de éxito */
+        .success-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(60, 47, 47, 0.9); /* Fondo semi-transparente */
+            color: #FFD700; /* Dorado */
+            font-family: 'Minecraft', sans-serif;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 4px #000000;
+            padding: 1.5em 2.5em;
+            border: 4px solid #00FF00; /* Borde verde neón */
+            border-style: outset;
+            box-shadow: 0 0 20px #00FF00, 0 0 40px #FFD700; /* Brillo neón */
+            border-radius: 8px;
+            z-index: 1000;
+            animation: popIn 0.5s ease forwards;
+            font-style: italic;
+        }
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .success-message span {
+            display: block;
+            text-align: center;
+        }
+    </style>
+    </head>
+<body class="is-preload">
+
+    <!-- Success Message -->
+    <div id="success-message" class="success-message">
+        <span>GRACIAS POR TU CORREO XD</span>
+    </div>
+
+    <!-- Modal for specific information -->
+    <div id="consultancy-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">×</span>
+            <h2 class="custom-header custom-header-h2" id="modal-title">Acerca de Cyberpulse</h2>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Intro -->
+        <section class="intro">
+            <header>
+                <h1 class="custom-header custom-header-h1">Cyberpulse</h1>
+                <p class="highlight-text">Liderando la vanguardia tecnológica como su consultoría estratégica, fundada por Kosem Shelby</p>
+                <ul class="actions">
+                    <li><a href="#first" class="arrow scrolly"><span class="label">Siguiente</span></a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="Kosem Shelby y el equipo de Cyberpulse innovando en tecnología avanzada" class="image-clickable" data-info="intro" onclick="openModal(this)" /></span>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section id="first">
+            <header>
+                <h2 class="custom-header custom-header-h2" onclick="openModalWithInfo('history-video')">Historia</h2>
+            </header>
+            <div class="content">
+                <p class="highlight-text"><strong>Cyberpulse</strong> fue fundado en 2015 por la visionaria empresaria Kosem Shelby, una líder destacada en el ámbito de la tecnología avanzada. Con un portafolio de múltiples empresas pioneras en innovación, Kosem Shelby estableció Cyberpulse como la joya de la corona de su grupo, enfocada en revolucionar la consultoría informática. Iniciamos en francia , paris , integrando tecnologías de punta como inteligencia artificial, blockchain y computación en la nube para transformar organizaciones a nivel global. Desde entonces, Cyberpulse ha impulsado a cientos de clientes hacia la excelencia tecnológica, ofreciendo soluciones innovadoras y un compromiso firme con el progreso digital.</p>
+                <span class="image main"><img src="images/pic02.jpg" alt="Kosem Shelby liderando una reunión en la sede de Cyberpulse" class="image-clickable" data-info="history" onclick="openModal(this)" /></span>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section>
+            <header>
+                <h2 class="custom-header custom-header-h2" onclick="openModalWithInfo('mission-vision')">Misión y Visión</h2>
+            </header>
+            <div class="content">
+                <p class="highlight-text"><strong>Nuestra misión</strong> es acelerar la transformación digital de las organizaciones mediante soluciones informáticas de vanguardia, integrando tecnologías emergentes como IA, blockchain y big data para optimizar procesos, fortalecer la seguridad y potenciar la innovación, guiando a nuestros clientes hacia el liderazgo en un mundo conectado.</p>
+                <ul class="feature-icons">
+                    <li>
+                        <img src="imagesicons/security.png" class="icon" data-info="security-advanced" onclick="openModal(this)" alt="Icono de ciberseguridad" />
+                        <div class="content">
+                            <h4>Ciberseguridad de Élite</h4>
+                            <p>Protegemos sus activos digitales con soluciones avanzadas de ciberseguridad, incluyendo detección de amenazas en tiempo real y cifrado de extremo a extremo, garantizando la máxima seguridad en entornos empresariales complejos.</p>
+                            <button class="button primary small" onclick="openModalWithInfo('security-advanced')">Más Información</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagesicons/cloud.png" class="icon" data-info="cloud-infrastructure" onclick="openModal(this)" alt="Icono de infraestructura en la nube" />
+                        <div class="content">
+                            <h4>Infraestructura en la Nube de Vanguardia</h4>
+                            <p>Optimizamos su infraestructura con soluciones en la nube altamente escalables, integradas con AWS, Azure y Google Cloud, reduciendo costos operativos hasta en un 35% y mejorando la agilidad empresarial.</p>
+                            <button class="button primary small" onclick="openModalWithInfo('cloud-infrastructure')">Más Información</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagesicons/ai.png" class="icon" data-info="ai-solutions" onclick="openModal(this)" alt="Icono de inteligencia artificial" />
+                        <div class="content">
+                            <h4>Inteligencia Artificial Transformadora</h4>
+                            <p>Implementamos soluciones de IA personalizadas para automatización, análisis predictivo y optimización de procesos, logrando incrementos de hasta un 40% en la eficiencia operativa de nuestros clientes.</p>
+                            <button class="button primary small" onclick="openModalWithInfo('ai-solutions')">Más Información</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagesicons/code.png" class="icon" data-info="agile-development" onclick="openModal(this)" alt="Icono de desarrollo ágil" />
+                        <div class="content">
+                            <h4>Desarrollo Ágil de Software</h4>
+                            <p>Nuestro enfoque ágil permite entregas rápidas de software a medida, utilizando frameworks modernos como React y Node.js, reduciendo el tiempo de desarrollo en un 30%.</p>
+                            <button class="button primary small" onclick="openModalWithInfo('agile-development')">Más Información</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagesicons/globe.png" class="icon" data-info="global-reach" onclick="openModal(this)" alt="Icono de alcance global" />
+                        <div class="content">
+                            <h4>Alcance Global Estratégico</h4>
+                            <p>Operamos en más de Dolan países, adaptando nuestras soluciones a regulaciones locales y ofreciendo soporte multilingüe 24/7, fortaleciendo la presencia global de nuestros clientes.</p>
+                            <button class="button primary small" onclick="openModalWithInfo('global-reach')">Más Información</button>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="imagesicons/bigdata.png" class="icon" data-info="big-data" onclick="openModal(this)" alt="Icono de big data" />
+                        <div class="content">
+                            <h4>Gestión Avanzada de Big Data</h4>
+                            <p>Procesamos grandes volúmenes de datos con herramientas como Hadoop y Spark, generando insights accionables que han incrementado las ventas de nuestros clientes hasta en un 25%.</p>
+                            <button class="button primary small" onclick="openModalWithInfo('big-data')">Más Información</button>
+                        </div>
+                    </li>
+                </ul>
+                <p class="highlight-text"><strong>Nuestra visión</strong> es consolidarnos como la consultoría informática líder a nivel mundial, inspirados por la visión de Kosem Shelby, siendo pioneros en la adopción de tecnologías avanzadas y estableciendo estándares de excelencia, sostenibilidad y seguridad en la era digital.</p>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section>
+            <header>
+                <h2 class="custom-header custom-header-h2" onclick="openModalWithInfo('services')">Nuestros Servicios</h2>
+            </header>
+            <div class="content">
+                <p class="highlight-text"><strong>Desplegamos tecnologías avanzadas</strong> para ofrecer soluciones integrales que impulsen su organización hacia el futuro, desde la estrategia hasta la ejecución impecable.</p>
+
+                <!-- Section -->
+                <section>
+                    <header>
+                        <h3 class="custom-header custom-header-h3">Ciberseguridad de Vanguardia</h3>
+                        <p class="subheader-text">Protegemos su infraestructura digital con firewalls de última generación, detección de intrusos basada en IA, auditorías de vulnerabilidades avanzadas y programas de capacitación en ciberseguridad, resguardando sus activos ante amenazas sofisticadas en tiempo real.</p>
+                    </header>
+                    <div class="content">
+                        <div class="gallery">
+                            <a href="images/gallery/fulls/01.jpg" class="landscape"><img src="images/gallery/thumbs/01.jpg" alt="Análisis de amenazas con IA en Cyberpulse" class="image-clickable" data-info="cybersecurity-ai" onclick="openModal(this)" /></a>
+                            <a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="Firewalls de próxima generación" class="image-clickable" data-info="cybersecurity-firewall" onclick="openModal(this)" /></a>
+                            <a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="Capacitación avanzada en ciberseguridad" class="image-clickable" data-info="cybersecurity-training" onclick="openModal(this)" /></a>
+                            <a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="Monitoreo de ciberamenazas 24/7" class="image-clickable" data-info="cybersecurity-monitoring" onclick="openModal(this)" /></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header>
+                        <h3 class="custom-header custom-header-h3">Desarrollo de Software Innovador</h3>
+                        <p class="subheader-text">Diseñamos soluciones de software a medida, desde plataformas empresariales escalables hasta aplicaciones móviles de alto rendimiento, aprovechando frameworks modernos, IA y blockchain para maximizar la eficiencia y competitividad de su negocio.</p>
+                    </header>
+                    <div class="content">
+                        <div class="gallery">
+                            <a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/05.jpg" alt="Desarrollo de software a medida" class="image-clickable" data-info="software-custom" onclick="openModal(this)" /></a>
+                            <a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="Apps móviles con tecnología de punta" class="image-clickable" data-info="software-mobile" onclick="openModal(this)" /></a>
+                            <a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="Integración de sistemas con blockchain" class="image-clickable" data-info="software-blockchain" onclick="openModal(this)" /></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Section -->
+                <section>
+                    <header>
+                        <h3 class="custom-header custom-header-h3">Transformación Digital Estratégica</h3>
+                        <p class="subheader-text">Impulsamos su evolución tecnológica con migraciones a la nube optimizadas, automatización inteligente mediante RPA (Robotic Process Automation) y análisis de datos avanzado con machine learning, posicionando su empresa para liderar en la era digital.</p>
+                    </header>
+                    <div class="content">
+                        <div class="gallery">
+                            <a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg" alt="Migración segura a la nube" class="image-clickable" data-info="digital-cloud" onclick="openModal(this)" /></a>
+                            <a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="Automatización con RPA" class="image-clickable" data-info="digital-rpa" onclick="openModal(this)" /></a>
+                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="Análisis predictivo con machine learning" class="image-clickable" data-info="digital-ml" onclick="openModal(this)" /></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section>
+            <header>
+                <h2 class="custom-header custom-header-h2">¿Por Qué Elegir Cyberpulse?</h2>
+            </header>
+            <div class="content">
+                <p class="highlight-text"><strong>Nuestra promesa</strong> es liderar la innovación tecnológica, entregando soluciones de consultoría informática de precisión, respaldadas por el legado de Kosem Shelby y un equipo de élite en tecnología avanzada. Con un enfoque estratégico, compromiso con la calidad y visión futurista, aceleramos su camino hacia la excelencia digital.</p>
+                <ul class="actions">
+                    <li><button class="button primary large" onclick="openModalWithInfo('transformation')">Inicie Su Transformación</button></li>
+                    <li><button class="button large" onclick="openModalWithInfo('discover-more')">Descubra Más</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section id="contactenos">
+            <header>
+                <h2 class="custom-header custom-header-h2">Contáctenos</h2>
+            </header>
+            <div class="content">
+                <p class="highlight-text"><strong>Conéctese con nosotros</strong> para explorar cómo Cyberpulse, bajo la visión de Kosem Shelby, puede revolucionar su negocio con tecnologías de punta y estrategias informáticas de clase mundial. Estamos listos para impulsar su futuro.</p>
+                <form id="contact-form" action="https://formspree.io/f/mldnpqzp" method="POST">
+                    <div class="fields">
+                        <div class="field half">
+                            <input type="text" name="name" id="name" placeholder="Nombre" required />
+                        </div>
+                        <div class="field half">
+                            <input type="email" name="email" id="email" placeholder="Correo Electrónico" required />
+                        </div>
+                        <div class="field">
+                            <textarea name="message" id="message" placeholder="Mensaje" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="_to" value="cyberpulse1011@gmail.com" />
+                        <input type="hidden" name="_subject" value="Nuevo mensaje de contacto desde Cyberpulse" />
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Enviar Mensaje" class="button primary" /></li>
+                    </ul>
+                </form>
+            </div>
+            <footer>
+                <ul class="items">
+                    <li>
+                        <h3>Correo Electrónico</h3>
+                        <a href="mailto:ccyberpulse@gmail.com">ccyberpulse@gmail.com</a>
+                    </li>
+                    <li>
+                        <h3>Teléfono</h3>
+                        <a href="tel:+5586169873">5586169873</a>
+                    </li>
+                    <li>
+                        <h3>Dirección</h3>
+                        <span>1234 Innovation Drive, Austin, TX 78701</span>
+                    </li>
+                    <li>
+                        <h3>Redes Sociales</h3>
+                        <ul class="icons">
+                            <li><a href="https://facebook.com/CyberpulseTech" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                            <li><a href="https://www.instagram.com/cyberpulse19?igsh=YWI0aGJ6YnB1bjFr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </footer>
+        </section>
+
+        <!-- Copyright -->
+        <div class="copyright">© Cyberpulse. Todos los derechos reservados. Diseño: <a href="https://html5up.net">HTML5 UP</a>.</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Contenido específico para cada imagen, iconos y nuevos modales
+        const modalContents = {
+            'intro': `
+                <h3 class="custom-header custom-header-h3">Innovación Tecnológica en Cyberpulse</h3>
+                <p>Cyberpulse, fundada por Kosem Shelby, es una consultoría líder que impulsa la transformación digital con tecnologías como IA, blockchain y computación en la nube. Desde Austin, Texas, hemos ayudado a más de 500 empresas a innovar, optimizando procesos y fortaleciendo su competitividad global.</p>
+            `,
+            'history': `
+                <h3 class="custom-header custom-header-h3">Nuestra Historia</h3>
+                <p>Desde 2015, Cyberpulse ha liderado la revolución tecnológica bajo la visión de Kosem Shelby. Nuestra trayectoria incluye proyectos emblemáticos en IA y blockchain, transformando industrias como finanzas y salud, y ganando el reconocimiento como "Consultoría Tecnológica del Año 2024".</p>
+            `,
+            'history-video': `
+                <h3 class="custom-header custom-header-h3">Nuestra Historia</h3>
+                <p>Conoce más sobre la trayectoria de Cyberpulse a través de este video:</p>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/eNPDBVeiXsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            `,
+            'mission-vision': `
+                <h3 class="custom-header custom-header-h3">Misión y Visión</h3>
+                <p>Descubre nuestra misión y visión a través de este video:</p>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/X7t9dHJ7Ey8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            `,
+            'services': `
+                <h3 class="custom-header custom-header-h3">Nuestros Servicios</h3>
+                <p>Explora nuestros servicios innovadores en este video:</p>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/xSSnuk7uw6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            `,
+            'cybersecurity-ai': `
+                <h3 class="custom-header custom-header-h3">Detección de Amenazas con IA</h3>
+                <p>Nuestra tecnología de detección de amenazas basada en inteligencia artificial analiza patrones en tiempo real, identificando y neutralizando ciberataques avanzados. Esto ha permitido a nuestros clientes, como bancos internacionales, proteger datos sensibles con un 99.9% de efectividad.</p>
+                <img src="images/gallery/fulls/01.jpg" class="fulls-image" alt="Análisis de amenazas con IA" />
+            `,
+            'cybersecurity-firewall': `
+                <h3 class="custom-header custom-header-h3">Firewalls de Próxima Generación</h3>
+                <p>Implementamos firewalls avanzados que combinan filtrado de paquetes, inspección profunda y aprendizaje automático para bloquear amenazas sofisticadas. Nuestras soluciones han reducido los incidentes de seguridad en un 40% para empresas globales.</p>
+                <img src="images/gallery/fulls/02.jpg" class="fulls-image" alt="Firewalls de próxima generación" />
+            `,
+            'cybersecurity-training': `
+                <h3 class="custom-header custom-header-h3">Capacitación en Ciberseguridad</h3>
+                <p>Nuestros programas de capacitación en ciberseguridad educan a equipos empresariales sobre phishing, ransomware y mejores prácticas, reduciendo errores humanos en un 50%. Ofrecemos talleres interactivos y simulaciones de ataques en tiempo real.</p>
+                <img src="images/gallery/fulls/03.jpg" class="fulls-image" alt="Capacitación avanzada en ciberseguridad" />
+            `,
+            'cybersecurity-monitoring': `
+                <h3 class="custom-header custom-header-h3">Monitoreo de Ciberamenazas 24/7</h3>
+                <p>Nuestro servicio de monitoreo continuo utiliza IA para detectar anomalías en redes empresariales, garantizando respuestas rápidas ante amenazas. Este servicio ha evitado pérdidas millonarias para clientes en sectores críticos.</p>
+                <img src="images/gallery/fulls/04.jpg" class="fulls-image" alt="Monitoreo de ciberamenazas 24/7" />
+            `,
+            'software-custom': `
+                <h3 class="custom-header custom-header-h3">Software a Medida</h3>
+                <p>Desarrollamos plataformas empresariales personalizadas con frameworks como React y Node.js, integrando IA para automatización. Nuestras soluciones han incrementado la eficiencia operativa de clientes en un 30%.</p>
+                <img src="images/gallery/fulls/05.jpg" class="fulls-image" alt="Desarrollo de software a medida" />
+            `,
+            'software-mobile': `
+                <h3 class="custom-header custom-header-h3">Aplicaciones Móviles</h3>
+                <p>Creamos aplicaciones móviles de alto rendimiento para iOS y Android, utilizando tecnologías como Flutter y Swift. Nuestras apps, como las desarrolladas para startups de salud, han alcanzado más de 1M de descargas.</p>
+                <img src="images/gallery/fulls/06.jpg" class="fulls-image" alt="Apps móviles con tecnología de punta" />
+            `,
+            'software-blockchain': `
+                <h3 class="custom-header custom-header-h3">Integración con Blockchain</h3>
+                <p>Implementamos soluciones blockchain para contratos inteligentes y cadenas de suministro, garantizando transparencia y seguridad. Por ejemplo, optimizamos la logística de una empresa global, reduciendo costos en un 25%.</p>
+                <img src="images/gallery/fulls/07.jpg" class="fulls-image" alt="Integración de sistemas con blockchain" />
+            `,
+            'digital-cloud': `
+                <h3 class="custom-header custom-header-h3">Migración a la Nube</h3>
+                <p>Facilitamos migraciones seguras a plataformas como AWS y Azure, optimizando infraestructuras para escalabilidad. Nuestras migraciones han reducido los tiempos de inactividad en un 60% para empresas Fortune 500.</p>
+                <img src="images/gallery/fulls/08.jpg" class="fulls-image" alt="Migración segura a la nube" />
+            `,
+            'digital-rpa': `
+                <h3 class="custom-header custom-header-h3">Automatización con RPA</h3>
+                <p>Nuestra automatización con Robotic Process Automation (RPA) elimina tareas repetitivas, aumentando la productividad en un 45%. Implementamos bots personalizados para procesos financieros y logísticos.</p>
+                <img src="images/gallery/fulls/09.jpg" class="fulls-image" alt="Automatización con RPA" />
+            `,
+            'digital-ml': `
+                <h3 class="custom-header custom-header-h3">Análisis Predictivo con Machine Learning</h3>
+                <p>Utilizamos machine learning para análisis predictivo, ayudando a empresas a anticipar tendencias y optimizar decisiones. Por ejemplo, nuestro modelo predictivo para retail incrementó las ventas en un 20%.</p>
+                <img src="images/gallery/fulls/10.jpg" class="fulls-image" alt="Análisis predictivo con machine learning" />
+            `,
+            'security-advanced': `
+                <h3 class="custom-header custom-header-h3">Ciberseguridad de Élite</h3>
+                <p>Protegemos sus datos con tecnologías avanzadas como cifrado AES-256, autenticación multifactor y detección de amenazas en tiempo real, logrando una reducción del 95% en brechas de seguridad para nuestros clientes.</p>
+            `,
+            'cloud-infrastructure': `
+                <h3 class="custom-header custom-header-h3">Infraestructura en la Nube de Vanguardia</h3>
+                <p>Diseñamos arquitecturas en la nube personalizadas con AWS, Azure y Google Cloud, optimizando costos operativos hasta en un 35% y mejorando la escalabilidad para empresas de todos los tamaños.</p>
+            `,
+            'ai-solutions': `
+                <h3 class="custom-header custom-header-h3">Inteligencia Artificial Transformadora</h3>
+                <p>Nuestras soluciones de IA, incluyendo modelos de deep learning y procesamiento de lenguaje natural, han transformado operaciones empresariales, aumentando la productividad hasta en un 40%.</p>
+            `,
+            'agile-development': `
+                <h3 class="custom-header custom-header-h3">Desarrollo Ágil de Software</h3>
+                <p>Utilizamos metodologías ágiles como Scrum y Kanban para entregar software a medida de alta calidad, reduciendo los tiempos de desarrollo en un 30% y garantizando alineación con los objetivos del cliente.</p>
+            `,
+            'global-reach': `
+                <h3 class="custom-header custom-header-h3">Alcance Global Estratégico</h3>
+                <p>Con presencia en más de 25 países, ofrecemos soluciones adaptadas a regulaciones locales y soporte multilingüe 24/7, ayudando a nuestros clientes a expandir su impacto global.</p>
+            `,
+            'big-data': `
+                <h3 class="custom-header custom-header-h3">Gestión Avanzada de Big Data</h3>
+                <p>Procesamos y analizamos grandes volúmenes de datos con herramientas como Hadoop, Spark y Snowflake, generando datos que han impulsado las ventas de clientes en un 25%.</p>
+            `,
+            'transformation': `
+                <p>Estamos listos para ayudarte a transformar tu negocio con soluciones tecnológicas avanzadas. Por favor, completa el formulario a continuación para que nuestro equipo se ponga en contacto contigo y comience tu viaje hacia la innovación digital.</p>
+                <form id="transformation-form" action="https://formspree.io/f/mldnpqzp" method="POST">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="transform-name">Nombre Completo</label>
+                            <input type="text" name="name" id="transform-name" placeholder="Ingresa tu nombre" required />
+                        </div>
+                        <div class="field">
+                            <label for="transform-email">Correo Electrónico</label>
+                            <input type="email" name="email" id="transform-email" placeholder="Ingresa tu correo electrónico" required />
+                        </div>
+                        <div class="field">
+                            <label for="transform-company">Nombre de la Empresa</label>
+                            <input type="text" name="company" id="transform-company" placeholder="Ingresa el nombre de tu empresa" />
+                        </div>
+                        <div class="field">
+                            <label for="transform-phone">Telefono</label>
+                            <input type="tel" name="phone" id="transform-phone" placeholder="Ingresa tu numero de telefono" />
+                        </div>
+                        <div class="field">
+                            <label for="transform-message">Mensaje</label>
+                            <textarea name="message" id="transform-message" placeholder="Describe como podemos ayudarte" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="_to" value="cyberpulse1011@gmail.com" />
+                        <input type="hidden" name="_subject" value="Nueva solicitud de transformación desde Cyberpulse" />
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Enviar Solicitud" class="button primary" /></li>
+                        <li><button class="button" onclick="closeModal()">Cerrar</button></li>
+                    </ul>
+                </form>
+            `,
+            'discover-more': `
+                <h3 class="custom-header custom-header-h3">Descubre Cyberpulse</h3>
+                <p>Explora por qué Cyberpulse es la elección líder en consultoría tecnológica a través de este video:</p>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/aQXLxBtWWG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="custom-header custom-header-h3">Acerca de Cyberpulse</h3>
+                <p>Cyberpulse, fundada en 2015 por Kosem Shelby en París, Francia, es una consultoría informática líder que impulsa la transformación digital global. Con sede actual en Austin, Texas, hemos trabajado con más de 500 empresas, optimizando procesos y fortaleciendo su competitividad en sectores como finanzas, salud, logística y tecnología.</p>
+                <h3 class="custom-header custom-header-h3">Nuestra Experiencia</h3>
+                <ul>
+                    <li><strong>Innovación Tecnológica</strong>: Somos pioneros en la integración de inteligencia artificial, blockchain, computación en la nube y big data, ofreciendo soluciones que han generado un impacto económico de más de $2 mil millones para nuestros clientes.</li>
+                    <li><strong>Proyectos Emblemáticos</strong>: Desarrollamos un sistema de detección de fraudes con IA para un banco internacional, reduciendo pérdidas en un 99%, y un software hospitalario basado en IA que mejoró diagnósticos en un 30%.</li>
+                    <li><strong>Reconocimientos</strong>: Galardonados como "Consultoría Tecnológica del Año 2024" por nuestra excelencia en innovación y resultados medibles.</li>
+                </ul>
+                <h3 class="custom-header custom-header-h3">Nuestro Enfoque</h3>
+                <p>Bajo el liderazgo de Kosem Shelby, combinamos visión estratégica con ejecución impecable. Utilizamos metodologías ágiles como Scrum y Kanban, y trabajamos con plataformas líderes como AWS, Azure y Google Cloud. Nuestro equipo global opera en más de 25 países, ofreciendo soporte multilingüe 24/7 y adaptándonos a regulaciones locales.</p>
+                <h3 class="custom-header custom-header-h3">Compromiso con el Futuro</h3>
+                <p>Estamos invirtiendo en tecnologías emergentes como computación cuántica e IA generativa para anticipar los desafíos del mañana. Nuestro objetivo es establecer nuevos estándares globales en sostenibilidad, seguridad y excelencia tecnológica, guiando a las empresas hacia un liderazgo sostenible en la era digital.</p>
+                <ul class="actions">
+                    <li><a href="#contactenos" class="button primary">Contáctenos</a></li>
+                </ul>
+            `
+        };
+
+        // Funciones para manejar el modal
+        function openModal(element) {
+            const infoKey = element.getAttribute('data-info');
+            document.getElementById('modal-title').innerText = 'Acerca de Cyberpulse';
+            document.getElementById('modal-content').innerHTML = modalContents[infoKey] || '<p>Información no disponible.</p>';
+            document.getElementById('consultancy-modal').style.display = 'block';
+        }
+        function openModalWithInfo(infoKey) {
+            document.getElementById('modal-title').innerText = infoKey === 'transformation' ? 'Inicie Su Transformación con Cyberpulse' : infoKey === 'discover-more' ? 'Descubre Cyberpulse' : infoKey === 'history-video' ? 'Nuestra Historia' : infoKey === 'mission-vision' ? 'Misión y Visión' : infoKey === 'services' ? 'Nuestros Servicios' : 'Acerca de Cyberpulse';
+            document.getElementById('modal-content').innerHTML = modalContents[infoKey] || '<p>Información no disponible.</p>';
+            document.getElementById('consultancy-modal').style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('consultancy-modal').style.display = 'none';
+        }
+        // Cerrar el modal al clicar en la 'x'
+        document.querySelector('.modal-close').addEventListener('click', closeModal);
+        // Cerrar el modal al clicar fuera del contenido
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('consultancy-modal')) {
+                closeModal();
+            }
+        });
+
+        // Función para mostrar el mensaje de éxito
+        function showSuccessMessage() {
+            const successMessage = document.getElementById('success-message');
+            successMessage.style.display = 'block';
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000); // Oculta después de 3 segundos
+        }
+
+        // Función para manejar el envío del formulario de contacto
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
+            const form = event.target;
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Validar que el correo sea de Gmail
+            if (!email.endsWith('@gmail.com')) {
+                alert('Por favor, utiliza un correo de Gmail (@gmail.com).');
+                return false;
+            }
+
+            // Validar que los campos no estén vacíos
+            if (!name || !email || !message) {
+                alert('Por favor, completa todos los campos requeridos.');
+                return false;
+            }
+
+            // Enviar formulario usando Formspree
+            const formData = new FormData(form);
+            fetch('https://formspree.io/f/mldnpqzp', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    showSuccessMessage();
+                    form.reset(); // Limpia el formulario
+                } else {
+                    alert('Error al enviar el mensaje. Por favor, intenta de nuevo más tarde.');
+                }
+            })
+            .catch(error => {
+                alert('Error al enviar el mensaje. Por favor, intenta de nuevo más tarde.');
+                console.error('Error de Formspree:', error);
+            });
+
+            return false; // Evita el envío del formulario por defecto
+        }
+
+        // Función para manejar el envío del formulario de transformación
+        function handleTransformationFormSubmit(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+
+            const form = event.target;
+            const name = document.getElementById('transform-name').value.trim();
+            const email = document.getElementById('transform-email').value.trim();
+            const company = document.getElementById('transform-company').value.trim();
+            const phone = document.getElementById('transform-phone').value.trim();
+            const message = document.getElementById('transform-message').value.trim();
+
+            // Validar que el correo sea de Gmail
+            if (!email.endsWith('@gmail.com')) {
+                alert('Por favor, utiliza un correo de Gmail (@gmail.com).');
+                return false;
+            }
+
+            // Validar que los campos requeridos no estén vacíos
+            if (!name || !email || !message) {
+                alert('Por favor, completa todos los campos requeridos.');
+                return false;
+            }
+
+            // Enviar formulario usando Formspree
+            const formData = new FormData(form);
+            fetch('https://formspree.io/f/mldnpqzp', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    showSuccessMessage();
+                    form.reset(); // Limpia el formulario
+                    closeModal(); // Cierra el modal
+                } else {
+                    alert('Error al enviar la solicitud. Por favor, intenta de nuevo más tarde.');
+                }
+            })
+            .catch(error => {
+                alert('Error al enviar la solicitud. Por favor, intenta de nuevo más tarde.');
+                console.error('Error de Formspree:', error);
+            });
+
+            return false; // Evita el envío del formulario por defecto
+        }
+
+        // Asignar manejadores de eventos a los formularios
+        document.getElementById('contact-form').addEventListener('submit', handleFormSubmit);
+        document.getElementById('transformation-form').addEventListener('submit', handleTransformationFormSubmit);
+
+        // Nuevo código para agregar tooltips a las imágenes de la galería
+        document.addEventListener('DOMContentLoaded', function() {
+            const galleryImages = document.querySelectorAll('.gallery .image-clickable');
+            galleryImages.forEach(image => {
+                const infoKey = image.getAttribute('data-info');
+                if (modalContents[infoKey]) {
+                    // Extraer el texto del párrafo en modalContents
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(modalContents[infoKey], 'text/html');
+                    const text = doc.querySelector('p') ? doc.querySelector('p').textContent : '';
+                    // Limitar el texto a 100 caracteres para el tooltip
+                    const shortText = text.length > 100 ? text.substring(0, 97) + '...' : text;
+                    // Crear el elemento
+                    const tooltip = document.createElement('span');
+                    tooltip.className = 'tooltip';
+                    tooltip.textContent = shortText;
+                    image.appendChild(tooltip);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
